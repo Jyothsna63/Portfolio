@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
     const [current, setCurrent] = useState("About me")
@@ -8,13 +9,13 @@ const Header = () => {
     }, [current])
     const Clickstyle =
     {
-        borderBottom: "2.5px solid black",
+        borderBottom: "3px solid black",
         color: "black"
     }
     return (
         <nav className="navbar navbar-expand-lg font-1 w-5 shadow fs-5 bg-2 fixed-top">
             <div className="container-fluid">
-                <a href="" className="navbar-brand mx-3 font-color-1">Midhun Mareedu</a>
+                <a href="" className="navbar-brand mx-3 font-color-1"><img src="brand.png" width={"70px"} alt="" /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
