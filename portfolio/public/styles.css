@@ -291,3 +291,8 @@ html {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.nav-link:active.hover-animation::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
