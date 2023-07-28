@@ -8,7 +8,7 @@ const Header = () => {
     }, [current])
     const Clickstyle =
     {
-        borderBottom: "2px solid black",
+        borderBottom: "2.5px solid black",
         color: "black"
     }
     return (
