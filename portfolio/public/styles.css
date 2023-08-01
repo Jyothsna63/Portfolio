@@ -279,7 +279,7 @@ html {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 3px;
+    height: 4px;
     bottom: 0;
     left: 0;
     background-color: #595959;
@@ -295,4 +295,10 @@ html {
 .nav-link:active.hover-animation::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* favicon */
+
+#favicon {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }

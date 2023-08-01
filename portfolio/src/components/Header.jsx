@@ -9,7 +9,7 @@ const Header = () => {
     }, [current])
     const Clickstyle =
     {
-        borderBottom: "3px solid black",
+        borderBottom: "4px solid black",
         color: "black"
     }
     return (
@@ -25,7 +25,7 @@ const Header = () => {
                             <a className="nav-link " style={current == "About me" ? Clickstyle : {}} aria-current="page" id="about" href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >About me</a>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Skills" ? Clickstyle : {}} aria-current="page" id="skills" href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >Skills</a>
+                            <a className="nav-link " style={current == "Skills" ? Clickstyle : {}} aria-current="page"  href="#skills" onClick={(e) => setCurrent(e.target.innerHTML)} >Skills</a>
                         </li>
 
                         <li className="nav-item mx-4 hover-animation">
