@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg font-1 w-5 shadow fs-5 bg-2 fixed-top">
             <div className="container-fluid">
-                <a href="" className="navbar-brand mx-3 font-color-1"><img src="brand.png" width={"70px"} alt="" /></a>
+                <a href="" className="navbar-brand mx-3 font-color-1"><img src="img/brand.png" width={"70px"} alt="" /></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -29,13 +29,13 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Projects" ? Clickstyle : {}} aria-current="page" id="projects" href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >Projects</a>
+                            <a className="nav-link " style={current == "Projects" ? Clickstyle : {}} aria-current="page"  href="#projects" onClick={(e) => setCurrent(e.target.innerHTML)} >Projects</a>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Certifications" ? Clickstyle : {}} aria-current="page" id="certifications" href="#" onClick={(e) => setCurrent(e.target.innerHTML)}  >Certifications</a>
+                            <a className="nav-link " style={current == "Certifications" ? Clickstyle : {}} aria-current="page"  href="#" onClick={(e) => setCurrent(e.target.innerHTML)}  >Certifications</a>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Contact" ? Clickstyle : {}} aria-current="page" id="contact" href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >Contact</a>
+                            <a className="nav-link " style={current == "Contact" ? Clickstyle : {}} aria-current="page"  href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >Contact</a>
                         </li>
                     </ul>
                     <div class="buttons">
