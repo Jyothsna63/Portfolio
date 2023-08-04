@@ -22,15 +22,15 @@ const Content = () => {
                         </div>
                     </div>
                 </Fade>
-                <div className="row container d-flex justify-content-center align-items-center vw-100" id="skills">
-                    <h1 className="text-center">Skills</h1>
+                <div className="row container d-flex justify-content-center align-items-center vw-100" >
+                    <h1 className="text-center" id="skills">Skills</h1>
                     {skills.map((skill) => {
                         return <SkillCard name={skill.name} rating={skill.rating} category={skill.category} />
                     })}
                 </div>
                 <br /><br /><br /><br /><br /><br />
-                <div className="row my-5 container d-flex justify-content-center align-items-center vh-100 vw-100" id="projects">
-                    <h1 className="text-center">Projects</h1>
+                <div className="row my-5 container d-flex justify-content-center align-items-center vh-100 vw-100" >
+                    <h1 className="text-center" id="projects">Projects</h1>
                     {
                         projects.map((project) => {
                             return <Project name={project.name} category={project.category} desc={project.desc} git_url={project.git_url} dip_url = {project.dip_url} />
