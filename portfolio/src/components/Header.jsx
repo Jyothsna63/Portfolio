@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Header = () => {
     const [current, setCurrent] = useState("About me")
+    
 
     useEffect(() => {
 
@@ -22,20 +24,20 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 my-lg-2 me-auto container justify-content-center">
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "About me" ? Clickstyle : {}} aria-current="page" id="about" href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >About me</a>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="about" smooth={true} duration={100} >About me</Link>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Skills" ? Clickstyle : {}} aria-current="page"  href="#skills" onClick={(e) => setCurrent(e.target.innerHTML)} >Skills</a>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="skills" smooth={true} duration={100} >Skills</Link>
                         </li>
 
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Projects" ? Clickstyle : {}} aria-current="page"  href="#projects" onClick={(e) => setCurrent(e.target.innerHTML)} >Projects</a>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="projects" smooth={true} duration={100} >Projects</Link>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Certifications" ? Clickstyle : {}} aria-current="page"  href="#" onClick={(e) => setCurrent(e.target.innerHTML)}  >Certifications</a>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="certifications" smooth={true} duration={100} >Certifications</Link>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <a className="nav-link " style={current == "Contact" ? Clickstyle : {}} aria-current="page"  href="#" onClick={(e) => setCurrent(e.target.innerHTML)} >Contact</a>
+                            <Link className="nav-link" activeStyle={Clickstyle}  spy={true} to="contact" smooth={true} duration={100} >Contact</Link>
                         </li>
                     </ul>
                     <div class="buttons">
