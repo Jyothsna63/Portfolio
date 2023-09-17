@@ -3,12 +3,6 @@ import { Fade } from "react-awesome-reveal";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Header = () => {
-    const [current, setCurrent] = useState("About me")
-    
-
-    useEffect(() => {
-
-    }, [current])
     const Clickstyle =
     {
         borderBottom: "4px solid black",
@@ -37,7 +31,7 @@ const Header = () => {
                             <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="certifications" smooth={true} duration={100} >Certifications</Link>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <Link className="nav-link" activeStyle={Clickstyle}  spy={true} to="contact" smooth={true} duration={100} >Contact</Link>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="contact" smooth={true} duration={100} >Contact</Link>
                         </li>
                     </ul>
                     <div class="buttons">
