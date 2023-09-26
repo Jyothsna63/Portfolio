@@ -1,5 +1,19 @@
 const projects = [
     {
+        name: "JNTUGV Finance Club Website",
+        category: "MERN",
+        desc: "A Blogging app made using MERN Stack Technology for Finance Club Students at JNTUGV(Our College)",
+        git_url: "https://github.com/venkatmidhunmareedu/FInanceClub-jntugv",
+        dip_url: "https://finance-club.vercel.app/"
+    },
+    {
+        name: "Employee Stress Prediction",
+        category: "FLASK APP",
+        desc: "Contructed a Model (Employee Stress Prediction), Documented the Model, Contructed a basic web app using Flask and Deployed it using AWS.",
+        git_url: "https://github.com/venkatmidhunmareedu/employeestressprediction",
+        dip_url: "https://employee-stress-prediction.onrender.com/"
+    },
+    {
         name: "Bill me",
         category: "MERN",
         desc: "A comprehensive web application revolutionizing shopkeeper's billing process and financial management",
@@ -19,13 +33,6 @@ const projects = [
         desc: "This Folder contains all of my designs",
         git_url: null,
         dip_url: "https://drive.google.com/drive/folders/178bXtfOy4zoakiJNwZe5iJAimWW8Zc5W"
-    },
-    {
-        name: "Employee Stress Prediction",
-        category: "FLASK APP",
-        desc: "Contructed a Model (Employee Stress Prediction), Documented the Model, Contructed a basic web app using Flask and Deployed it using AWS.",
-        git_url: "https://github.com/venkatmidhunmareedu/employeestressprediction",
-        dip_url: "https://employee-stress-prediction.onrender.com/"
     }
 ]
 

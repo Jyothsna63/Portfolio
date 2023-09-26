@@ -30,7 +30,7 @@ const Content = () => {
                     })}
                 </div>
                 <br /><br /><br /><br /><br /><br />
-                <div className="row my-5 container d-flex justify-content-center align-items-center vh-100 vw-100" name="projects">
+                <div className="row my-5 container d-flex justify-content-center align-items-center" name="projects">
                     <h1 className="text-center" >Projects</h1>
                     {
                         projects.map((project) => {
