@@ -5,6 +5,7 @@ import skills from "../data/skills";
 import SkillCard from "./SkillCard";
 import Project from "./Project";
 import projects from "../data/projects";
+import Footer from "./Footer";
 
 const Content = () => {
     return (
@@ -33,11 +34,13 @@ const Content = () => {
                     <h1 className="text-center" >Projects</h1>
                     {
                         projects.map((project) => {
-                            return <Project name={project.name} category={project.category} desc={project.desc} git_url={project.git_url} dip_url = {project.dip_url} />
+                            return <Project name={project.name} category={project.category} desc={project.desc} git_url={project.git_url} dip_url={project.dip_url} />
                         })
                     }
                 </div>
+
             </div>
+            <Footer />
         </div>
     )
 }

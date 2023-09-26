@@ -18,24 +18,23 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 my-lg-2 me-auto container justify-content-center">
                         <li className="nav-item mx-4 hover-animation">
-                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="about" smooth={true} duration={100} >About me</Link>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="about" smooth={true} duration={100} offset={-200}>About me</Link>
                         </li>
                         <li className="nav-item mx-4 hover-animation">
-                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="skills" smooth={true} duration={100} >Skills</Link>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="skills" smooth={true} duration={100} offset={-140} >Skills</Link>
                         </li>
 
                         <li className="nav-item mx-4 hover-animation">
-                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="projects" smooth={true} duration={100} >Projects</Link>
+                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="projects" smooth={true} duration={100} offset={-120} >Projects</Link>
                         </li>
-                        <li className="nav-item mx-4 hover-animation">
-                            <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="certifications" smooth={true} duration={100} >Certifications</Link>
-                        </li>
-                        <li className="nav-item mx-4 hover-animation">
+                        {/* <li className="nav-item mx-4 hover-animation">
                             <Link className="nav-link" activeStyle={Clickstyle} spy={true} to="contact" smooth={true} duration={100} >Contact</Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <div class="buttons">
-                        <button class="btn"><span></span><p data-text="download!" data-title="resume"></p></button>
+                        <a href="Resume.pdf" download="Resume.pdf">
+                            <button class="btn" type="button"><span></span><p data-text="download!" data-title="resume" ></p></button>
+                        </a>
                     </div>
                 </div>
             </div>
